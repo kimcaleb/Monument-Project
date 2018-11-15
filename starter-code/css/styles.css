@@ -1,1 +1,43 @@
 /* Custom Stylesheet */
+body {
+    font-family: Muli;
+    border: 1px solid #003300;
+}
+
+a {
+    text-decoration: none;
+    color: #0099cc;
+    font-weight: bold;
+    margin: 0px 100px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header {
+    margin-top: 10px;
+    text-align: center;
+
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .8em;
+    font-weight: 900;
+
+}
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+img {
+    width:100%;
+}
+
