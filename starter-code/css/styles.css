@@ -2,6 +2,7 @@
 body {
     font-family: Raleway;
     border: 1px solid #003300;
+    
 }
 
 
@@ -13,14 +14,16 @@ a {
     display:inline-block;
 }
 
-nav {
+header > nav {
     text-align: center;
-    margin-top: 10px;
     margin-bottom: 15px;
     position: fixed;
     top:0;
-   
+    background:white;
+    z-index: 1;
+    width:100%;
 }
+
 
 p {
     font-family: Lato;
@@ -28,21 +31,25 @@ p {
 
 
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: .8em;
-    font-weight: 900;
-
-}
-.centered {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   position: relative;
     
 }
+
+.imagetxt {
+    position: absolute;
+    top:40%;
+    left:25%;
+    color:white;
+    
+  
+}
+
+h1 {
+    font-family: Raleway;
+    font-size:36px;
+    letter-spacing: .4em;
+}
+
 .blogheader {
     width:100%;
 }
@@ -90,6 +97,11 @@ ul {
     padding-top: 15px;
 }
 
+.middle {
+    background:#ccf2ff;
+    text-align: center;
+}
+
 i {
     height: 10px;
     margin:0px 10px;
@@ -99,8 +111,6 @@ i {
 header {
     margin-top: 10px;
     text-align: center;
-    
-
 }
 main {
     margin:30px 50px 30px 100px;
@@ -124,9 +134,34 @@ main {
 img {
     width:80%;
 }
-div p {
+
+header > section > img {
+    width:100%;
+}
+div p {     
     width:80%;
 }
+
+input {
+    margin-bottom: 40px;
+}
+button {
+    background: #ccf2ff;
+    border: 1px solid #003300; 
+    margin-left:20px;
+}
+
+a:hover {
+    color: black;
+}
+
+button:hover {
+    background-color:  #4d4d4d;
+    color: white;
+    transition-duration: 1s;
+    
+}
+
 
 
 
