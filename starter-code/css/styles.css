@@ -1,6 +1,6 @@
 /* Custom Stylesheet */
 body {
-    font-family: Muli;
+    font-family: Raleway;
     border: 1px solid #003300;
 }
 
@@ -17,7 +17,13 @@ nav {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
-    
+    position: fixed;
+    top:0;
+   
+}
+
+p {
+    font-family: Lato;
 }
 
 
@@ -87,18 +93,23 @@ ul {
 i {
     height: 10px;
     margin:0px 10px;
+    font-size: 30px;
 }
 
 header {
     margin-top: 10px;
     text-align: center;
+    
 
 }
 main {
     margin:30px 50px 30px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
     flex-direction: row;
     align-items: flex-start;
+    
     
 
 }
