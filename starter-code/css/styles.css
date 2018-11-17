@@ -1,11 +1,8 @@
 /* Custom Stylesheet */
 body {
-    font-family: Raleway;
-    border: 1px solid #003300;
-    
+    font-family: Raleway, sans-serif;
+    border: 1px solid #003300;    
 }
-
-
 a {
     text-decoration: none;
     color: #0099cc;
@@ -13,7 +10,6 @@ a {
     margin: 0px 100px;
     display:inline-block;
 }
-
 header > nav {
     text-align: center;
     margin-bottom: 15px;
@@ -24,42 +20,30 @@ header > nav {
     width:100%;
 }
 
-
 p {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
 }
-
-
 .container {
-   position: relative;
-    
+   position: relative;   
 }
-
 .imagetxt {
     position: absolute;
     top:40%;
     left:25%;
-    color:white;
-    
-  
+    color:white; 
 }
-
 h1 {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size:36px;
     letter-spacing: .4em;
 }
-
 .blogheader {
     width:100%;
 }
-
-
 h2, .date {
     text-transform: uppercase;
     color:#004d66;
-    font-weight: bold;
-   
+    font-weight: bold;  
 }
 .about{
     margin-top: 100px;
@@ -67,7 +51,6 @@ h2, .date {
 #cowboy {
     margin: 20px 0px;
 }
-
 li {
     color: #0099cc;
     font-weight: bold;
@@ -78,16 +61,12 @@ li {
 ul {
     margin-left: -25px;
 }
-
-
 .top {
     height: 120px;
     background: #ccf2ff;
     display:flex;
     justify-content:center;
-    align-items: center;
-    
-    
+    align-items: center;   
 }
 .bottom {
     background:#ccf2ff;
@@ -114,7 +93,7 @@ header {
 }
 main {
     margin:30px 50px 30px 100px;
-    display: -webkit-box;
+    display: -webkit-flexbox;
     display: -ms-flexbox;
     display:flex;
     flex-direction: row;
@@ -159,9 +138,67 @@ button:hover {
     background-color:  #4d4d4d;
     color: white;
     transition-duration: 1s;
-    
 }
 
+article {
+    width: 80%;
+    margin-left:150px;
+    margin-bottom:80px;
+
+}
+
+article h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #004d66;
+  
+}
+
+form {
+    display:grid;
+    grid-template-areas: 
+        "name email"
+        "message message"
+        "submit submit";
+    grid-gap: 12px;
+    color: #004d66;
+    
+}
+input[name="name"] {
+    grid-area: name;
+    
+    
+}
+input[name="email"] {
+    grid-area: email;
+}
+textarea {
+    grid-area: message;
+ 
+}
+input[type="submit"] {
+    grid-area: submit;
+    background: white;
+    font-family: Raleway, sans-serif;
+    color: #004d66;
+    font-weight: bold;
+
+}
+
+form input, form textarea {
+    border: 1.5px solid #004d66;
+    padding:5px;
+    margin-bottom:-7px;
+   
+}
+form input::placeholder, form textarea::placeholder {
+    color: lightslategray;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size:11px;
+}
 
 
 
