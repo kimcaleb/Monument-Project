@@ -164,11 +164,13 @@ form {
 }
 input[name="name"] {
     grid-area: name;
+  
     
     
 }
 input[name="email"] {
     grid-area: email;
+    
 }
 textarea {
     grid-area: message;
